@@ -8,6 +8,7 @@ public class C01_Set {
     verilen array'in tekrar eden elementlerini sadece
     bir kere yazdirin
     Set ile yazdir
+    not: set siralama yapmaz index yapisi yoktur
      */
     public static void main(String[] args) {
         int arr[]={3,5,4,6,3,1,2,7,8,6,1,4,2,8};
@@ -15,11 +16,15 @@ public class C01_Set {
     }
 
     private static void arrayiTekrarsizYazdirin(int[] arr) {
-        Set<Integer> tekrarsizElementKumesi=new HashSet<>();
+        Set <Integer> tekrarsizElemanKumesi=new HashSet<>();
+        for (Integer each:arr) {
 
-        for (Integer each:arr ) {tekrarsizElementKumesi.add(each);
+            tekrarsizElemanKumesi.add(each);
 
         }
-        System.out.println(tekrarsizElementKumesi);
+        System.out.println(tekrarsizElemanKumesi);//[1, 2, 3, 4, 5, 6, 7, 8]
+
     }
+
+
 }
