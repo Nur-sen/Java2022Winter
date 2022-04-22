@@ -61,8 +61,8 @@ public class C01_Maps {
         // bu satira kadar key'leri index ile ulasabildigim keyList' e atadim
         // value'leri valueMDArr'e atadim
         // simdi bu key ve value'leri istedigim gibi manuple edebilirim
-        System.out.println("Numara  Isim  SoyIsim  Brans D.Yili");
-        System.out.println("=======================================");
+        System.out.println("Numara  Isim  SoyIsim  Brans ");
+        System.out.println("=============================");
         for (int i = 0; i <keyList.size() ; i++) {
                 System.out.print(keyList.get(i) + "  ");
             for (int j = 0; j <innerArrayBoyut ; j++) {
